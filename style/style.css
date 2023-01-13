@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fredoka+One&display=swap");
+
+* {
+  font-family: "montserrat", sans-serif;
+}
+
+/* scrollbar */
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #679787;
+}
+
+/* carousel */
+.carousel-caption {
+  bottom: 240px;
+  z-index: 2;
+}
+.carousel-caption h5 {
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+.carousel-caption p {
+  margin: auto;
+  font-size: 18px;
+  line-height: 1, 9;
+}
+.carousel-inner:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.w-100 {
+  height: 100vh;
+}
+
+/* about */
+.about h1 {
+  font-size: 50px;
+  font-family: "DM Serif Display", serif;
+  color: #354e46;
+  text-align: center;
+  font-style: italic;
+}
+.about h2 {
+  font-size: 15px;
+  color: #354e46;
+  text-align: center;
+  margin-right: 300px;
+  margin-left: 300px;
+}
+
+.aboutus2 {
+  margin: 100px;
+}
+
+/* acara */
+.acara {
+  background-color: #f7f7f7;
+}
+.acara .card .card-body:hover {
+  background-color: #679787;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.acara .card .card-body:hover img {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+.acara .card .card-body .card-title {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* kontak */
+.kontak p {
+  font-size: 30px;
+  color: #354e46;
+  text-align: center;
+}
+
+/* kategori */
+.kategori h2 {
+  font-size: 40px;
+  color: #354e46;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-style: italic;
+}
+/* custom tema */
+.customtema h2 {
+  font-size: 40px;
+  color: #354e46;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-style: italic;
+}
+
+.customtema .card .card-body:hover {
+  background-color: #679787;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.customtema .card .card-body:hover img {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+.customtema .card .card-body .services-title {
+  font-weight: 500;
+  font-size: 20px;
+}
+/* footer */
+.footer {
+  background-color: #679787;
+  margin: 0;
+  padding: 70px;
+  box-sizing: border-box;
+}
+
+.footer .container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #354e46;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #679787;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #354e46;
+  text-decoration: none;
+  font-weight: 300;
+  color: #ffffff;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #679787;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #354e46;
+  background-color: #679787;
+}

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SearchEO</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/logoSearchEO2.png"
+    />
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- CSS External -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar" style="background-color: #679787">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/images/logoSearchEO2.png"
+            width="190px"
+            height="80px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#AboutUs">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#acara"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pilih Acara
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="familygathering.html"
+                    >Family Gathering</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="genderreveal.html"
+                    >Gender Reveal</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="seminar.html">Seminar</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="wedding.html">Wedding</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="grandlaunching.html"
+                    >Grand Launching</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="lainnya.html">Lainnya</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- carousel -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/images/slide1.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h5>Wedding</h5>
+            <p>
+              kami akan membantu kamu dalam merencanakan pesta pernikahan untuk
+              hari H
+            </p>
+            <p><a href="wedding.html" class="btn btn-success mt-3">PILIH</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/slide2.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h5>Seminar</h5>
+            <p>menyediakan jasa untuk merencanakan event seminar</p>
+            <p><a href="seminar.html" class="btn btn-success mt-3">PILIH</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/images/slide3.jpeg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption">
+            <h5>Grand Launching</h5>
+            <p>membantu kamu menyiapkan acara grand launching yang meriah</p>
+            <p>
+              <a href="grandlaunching.html" class="btn btn-success mt-3"
+                >PILIH</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/slide4.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h5>Gender Reveal</h5>
+            <p>
+              membantu kamu menyiapkan acara Gender Reveal yang sangat meriah
+              tanpa harus repot
+            </p>
+            <p>
+              <a href="genderreveal.html" class="btn btn-success mt-3">PILIH</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/slide5.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h5>Family Gathering</h5>
+            <p>
+              kami membantu merayakan momen kebersamaan bersama keluargamu yang
+              sangat meriah tanpa harus repot
+            </p>
+            <p>
+              <a href="familygathering.html" class="btn btn-success mt-3"
+                >PILIH</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- About Us -->
+    <div id="AboutUs" class="about-us">
+      <div class="about">
+        <img
+          src="assets/images/pict8.png"
+          width="300px"
+          height="300px"
+          align="left"
+        />
+        <img
+          src="assets/images/pict7.png"
+          width="300px"
+          height="300px"
+          align="right"
+        />
+        <h1>
+          <br />
+          About Us
+        </h1>
+        <h2>
+          <br />
+          <br />
+          SearchEO adalah Jasa Event Planner Organizer profesional yang siap
+          menciptakan nuansa acara berkesan dan tentunya menjadi memori terbaik.
+          Tim EO kami akan membantu Anda menemukan konsep terbaik untuk acara
+          seminar, wedding, gender reveal, family gathering, grand launching dan
+          event lain yang tidak akan terlupakan!
+          <br />
+          <br />
+          Tim event organizer (EO) kami akan merancang acara sesuai dengan
+          kebutuhan Anda dan membuka diskusi untuk bertukar ide rancangan acara
+          yang akan diselenggarakan nanti. Beberapa perusahaan telah
+          mempercayakan EO kami untuk menyelenggarakan event bazaar serta
+          kegiatan outbound dan kami juga sebagai EO profesional selalu
+          menentukan venue yang tepat untuk acara Anda. Kami tidak hanya
+          berkontribusi untuk acara wedding saja, tapi kami juga memberikan
+          acara yang meriah untuk anak-anak sekolah/kuliah, nikah online atau
+          offline, reuni keluarga, gender reveal, hingga beberapa jenis acara
+          yang meriah dan mengesankan.
+          <br />
+          <br />
+          Diskusikan konsep event yang Anda inginkan kepada tim EO kami sehingga
+          dapat menentukan konsep yang berbeda dari lainnya dan tidak akan
+          terlupakan!
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </h2>
+      </div>
+    </div>
+    <div class="aboutus2" id="aboutus2">
+      <div class="aboutus2">
+        <table
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+          width="100%"
+          class="aboutus2"
+        >
+          <tbody>
+            <tr>
+              <td class="aboutus2">
+                <div class="hp3in_ico padbot10">
+                  <img src="assets\images\pict9.png" />
+                </div>
+                <div class="hp3in_title pagedescription1 padbot5">
+                  <strong>Creative Thinking</strong>
+                </div>
+                <div class="hp3in_desc pagedescription2">
+                  "Kreativitas adalah nyawa tim event organizer (EO) kami dalam
+                  bekerja untuk menghasilkan acara yang unik dan menarik."
+                </div>
+              </td>
+              <td class="aboutus2">
+                <div class="hp3in_ico padbot10">
+                  <img src="assets\images\pict10.png" />
+                </div>
+                <div class="hp3in_title pagedescription1 padbot5">
+                  <strong>Solid Teamwork</strong>
+                </div>
+                <div class="hp3in_desc pagedescription2">
+                  "Tim yang solid dan kompak siap membantu melancarkan acara
+                  seminar, wedding, family gathering, gender reveal, grand
+                  launching dan acara lainnya."
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+          width="100%"
+          class="aboutus2"
+        >
+          <tbody>
+            <tr>
+              <td class="aboutus2">
+                <div class="hp3in_ico padbot10">
+                  <img src="assets\images\pict11.png" />
+                </div>
+                <div class="hp3in_title pagedescription1 padbot5">
+                  <strong>Fun</strong>
+                </div>
+                <div class="hp3in_desc pagedescription2">
+                  "Membawa kesenangan dalam acara anda."
+                </div>
+              </td>
+              <td class="aboutus2">
+                <div class="hp3in_ico padbot10">
+                  <img src="assets\images\pict12.png" />
+                </div>
+                <div class="hp3in_title pagedescription1 padbot5">
+                  <strong>Reliable</strong>
+                </div>
+                <div class="hp3in_desc pagedescription2">
+                  "Partner yang dapat anda andalkan dalam acara anda."
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+    </div>
+
+    <!-- acara -->
+    <div id="acara" class="acara p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-uppercase fw-bold fs-4 text-center p-5">
+              <p>PILIH ACARA YANG AKAN KAMU ADAKAN</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card mt-4 shadow"
+              onclick="this.querySelector('a').click(); return true;"
+            >
+              <div class="card-body d-flex py-4 px-4 align-items-center">
+                <img
+                  src="assets/images/buttonseminar.png"
+                  width="150px"
+                  height="150px"
+                  alt="..."
+                />
+                <h5 class="services-title ms-2">Seminar</h5>
+                <a href="seminar.html"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card mt-4 shadow"
+              onclick="this.querySelector('a').click(); return true;"
+            >
+              <div class="card-body d-flex py-4 px-4 align-items-center">
+                <img
+                  src="assets/images/buttongrandlaunching.png"
+                  width="150px"
+                  height="150px"
+                  alt="..."
+                />
+                <h5 class="services-title ms-2">Grand Launching</h5>
+                <a href="grandlaunching.html"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card mt-4 shadow"
+              onclick="this.querySelector('a').click(); return true;"
+            >
+              <div class="card-body d-flex py-4 px-4 align-items-center">
+                <img
+                  src="assets/images/buttonpernikahan.png"
+                  width="150px"
+                  height="150px"
+                  alt="..."
+                />
+                <h5 class="services-title ms-2">Pernikahan</h5>
+                <a href="wedding.html"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card mt-4 shadow"
+              onclick="this.querySelector('a').click(); return true;"
+            >
+              <div class="card-body d-flex py-4 px-4 align-items-center">
+                <img
+                  src="assets/images/buttongenderreveal.png"
+                  width="150px"
+                  height="150px"
+                  alt="..."
+                />
+                <h5 class="services-title ms-2">Gender Reveal</h5>
+                <a href="genderreveal.html"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card mt-4 shadow"
+              onclick="this.querySelector('a').click(); return true;"
+            >
+              <div class="card-body d-flex py-4 px-4 align-items-center">
+                <img
+                  src="assets/images/buttonfamilygathering.png"
+                  width="150px"
+                  height="150px"
+                  alt="..."
+                />
+                <h5 class="services-title ms-2">Family Gathering</h5>
+                <a href="familygathering.html"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card mt-4 shadow"
+              onclick="this.querySelector('a').click(); return true;"
+            >
+              <div class="card-body d-flex py-4 px-4 align-items-center">
+                <img
+                  src="assets/images/pict15.png"
+                  width="150px"
+                  height="150px"
+                  alt="..."
+                />
+                <h5 class="services-title ms-2">Lainnya...</h5>
+                <a href="lainnya.html"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- contact -->
+          <div id="contact" class="contact p-5">
+            <div class="kontak">
+              <div class="row">
+                <div class="col-12">
+                  <div class="text-uppercase text-center fw-bold fs-4 p-5">
+                    <p>Contact Us</p>
+                  </div>
+                </div>
+                <form class="row g-3">
+                  <div class="col-12 col-sm-12 col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      style="height: 50px"
+                      id="inputNamaDepan"
+                      placeholder="First Name"
+                    />
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      style="height: 50px"
+                      id="inputNamaBelakang"
+                      placeholder="Last Name"
+                    />
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      style="height: 50px"
+                      id="inputEmail"
+                      placeholder="Your Email"
+                    />
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      style="height: 50px"
+                      id="inputPhone"
+                      placeholder="Your Phone"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      class="form-control"
+                      placeholder="Your Message"
+                      id="inputMessage"
+                      style="height: 100px"
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="gridCheck"
+                      />
+                      <label class="form-check-label" for="gridCheck">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button
+                      onclick="submitData()"
+                      class="btn btn-outline-success"
+                    >
+                      Send
+                    </button>
+                  </div>
+                </form>
+                <script type="text/javascript">
+                  function submitData() {
+                    var inputNamaDepan =
+                      document.getElementById("inputNamaDepan").value;
+                    var inputNamaBelakang =
+                      document.getElementById("inputNamaBelakang").value;
+                    var inputEmail =
+                      document.getElementById("inputEmail").value;
+                    var inputPhone =
+                      document.getElementById("inputPhone").value;
+                    var inputMessage =
+                      document.getElementById("inputMessage").value;
+
+                    alert(
+                      "Nama Depan : " +
+                        inputNamaDepan +
+                        "\nNama Belakang : " +
+                        inputNamaBelakang +
+                        "\nEmail : " +
+                        inputEmail +
+                        "\nNo.HP : " +
+                        inputPhone +
+                        "\nPesan : " +
+                        inputMessage
+                    );
+                  }
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>COMPANY</h4>
+            <ul>
+              <li><a href="#AboutUs">about us</a></li>
+              <li><a href="#acara">our event</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>GET HELP</h4>
+            <ul>
+              <li><a href="#contact">contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>FOLLOW US</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

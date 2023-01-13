@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Tema</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/logoSearchEO2.png"
+    />
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- CSS External -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar" style="background-color: #679787">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/images/logoSearchEO2.png"
+            width="190px"
+            height="80px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#AboutUs">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#acara"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pilih Acara
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="familygathering.html"
+                    >Family Gathering</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="genderreveal.html"
+                    >Gender Reveal</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="seminar.html">Seminar</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="wedding.html">Wedding</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="grandlaunching.html"
+                    >Grand Launching</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="lainnya.html">Lainnya</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--Custom tema-->
+    <div class="customtema" id="customtema">
+      <div id="contact" class="contact p-5">
+        <img
+          src="assets/images/pict8.png"
+          width="300px"
+          height="300px"
+          align="left"
+        />
+        <img
+          src="assets/images/pict7.png"
+          width="300px"
+          height="300px"
+          align="right"
+        />
+        <div class="kontak">
+          <div class="row">
+            <div class="col-12">
+              <div class="text-uppercase text-center fw-bold fs-4 p-5">
+                <p>Custom Tema</p>
+              </div>
+            </div>
+            <form class="row g-3">
+              <div class="col-12 col-sm-12 col-md-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  style="height: 50px"
+                  id="inputNamaDepan"
+                  placeholder="Nama depan"
+                />
+              </div>
+              <div class="col-12 col-sm-12 col-md-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  style="height: 50px"
+                  id="inputNamaBelakang"
+                  placeholder="Nama belakang"
+                />
+              </div>
+              <div class="col-12 col-sm-12 col-md-6">
+                <input
+                  type="email"
+                  class="form-control"
+                  style="height: 50px"
+                  id="inputEmail"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="col-12 col-sm-12 col-md-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  style="height: 50px"
+                  id="inputPhone"
+                  placeholder="No. HP"
+                />
+              </div>
+              <div class="col-12">
+                <textarea
+                  class="form-control"
+                  placeholder="Silahkan ketik tema keinginan anda disini..."
+                  id="inputTema"
+                  style="height: 100px"
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <button onclick="submitData()" class="btn btn-outline-success">
+                  Send
+                </button>
+              </div>
+            </form>
+            <script type="text/javascript">
+              function submitData() {
+                var inputNamaDepan =
+                  document.getElementById("inputNamaDepan").value;
+                var inputNamaBelakang =
+                  document.getElementById("inputNamaBelakang").value;
+                var inputEmail = document.getElementById("inputEmail").value;
+                var inputPhone = document.getElementById("inputPhone").value;
+                var inputTema = document.getElementById("inputTema").value;
+
+                alert(
+                  "Nama Depan : " +
+                    inputNamaDepan +
+                    "\nNama Belakang : " +
+                    inputNamaBelakang +
+                    "\nEmail : " +
+                    inputEmail +
+                    "\nNo.HP : " +
+                    inputPhone +
+                    "\nPesan : " +
+                    inputTema
+                );
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>COMPANY</h4>
+            <ul>
+              <li><a href="index.html#AboutUs">about us</a></li>
+              <li><a href="index.html#acara">our event</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>GET HELP</h4>
+            <ul>
+              <li><a href="#contact">contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>FOLLOW US</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
